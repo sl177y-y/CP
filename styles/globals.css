@@ -692,6 +692,8 @@ body {
     margin-left: 10rem;
     position: relative;
     z-index: 2;
+    justify-content: center;
+    padding-bottom: 3rem;
 }
 
 .teamMainCard .teamInfoCard h1 {
@@ -1708,6 +1710,8 @@ footer {
     
     .teamMainCard .teamInfoCard {
         margin-left: 9.5rem;
+        justify-content: center;
+        padding-bottom: 2rem;
     }
     
     .teamMainCard .teamInfoCard h1 {
