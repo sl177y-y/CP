@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.clusterprotocol.ai/</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.clusterprotocol.ai/blogs</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clusterprotocol.ai/faqs</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clusterprotocol.ai/waitlist</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clusterprotocol.ai/glossary</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clusterprotocol.ai/brandkit</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.clusterprotocol.ai/blog/data-annotation-its-future-approaches-and-role-in-the-success-of-ai-and-ml-projects-1711698922</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.clusterprotocol.ai/blog/cluster-protocol-catalyzing-decentralized-ai-with-pivots-support-1710948100</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.clusterprotocol.ai/blog/exploring-the-world-of-fully-homomorphic-encryption-fhe-and-concrete-ml-a-step-towards-privacy-preserving-machine-learning-1710343807</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.clusterprotocol.ai/blog/maximizing-decentralized-ai-potential-a-walkthrough-of-cluster-protocols-crowdsource-1709996734</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.clusterprotocol.ai/blog/cluster-protocol-proof-of-compute-protocol-and-github-for-ai-models-1709996567</loc>
+  <lastmod>2024-03-30T07:23:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

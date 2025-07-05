@@ -1,0 +1,35 @@
+[
+    {
+      "name": "Carl Bot (Text-to-Image)",
+      "slug": "carl",
+      "description": "Generate Image Diffusion from prompt",
+      "image": "./modelavatar/carl.png",
+      "backgroundColor": "#c8dac8",
+      "circleColor": "#829d8a"
+    },
+    {
+      "name": "Jeniffer (Image-to-Image)",
+      "slug": "jeniffer",
+      "description": "Turn images into different Art Styles",
+      "image": "./modelavatar/jeniffer.png",
+      "backgroundColor": "#fcd7ce",
+      "circleColor": "#955d5c"
+    },
+    {
+        "name": "Stacy Bot (Image-to-Text)",
+        "slug": "stacy",
+        "description": "returns text from the image using ml",
+        "image": "./modelavatar/stacy.png",
+        "backgroundColor": "#f5eae3",
+        "circleColor": "#c8bdbd"
+      },
+      {
+        "name": "Max Bot (Image-to-Text)",
+        "slug": "max",
+        "description": "Question Image using ML",
+        "image": "./modelavatar/max.png",
+        "backgroundColor": "#aab1ca",
+        "circleColor": "#7582ae"
+      }
+  ]
+  
