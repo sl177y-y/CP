@@ -421,13 +421,8 @@ export default function Homepage() {
       </div>
       <div id='CONteam' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem 1rem', width: '95%', margin: '2rem auto', marginBottom:'10rem' }}>
         {/* Team Member Card 1 */}
-        
-
-        
-      
-        {/* Team Member Card 2 */}
-        <div className="teamMainCard" style={{ transform: 'rotate(-2deg) translate(0rem, 2rem)', zIndex: 1 }}>
-          <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
+        <div className="teamMainCard" style={{ zIndex: 2 }}>
+        <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
           <div className="teamInfoCard">
             <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
             <h1 className="gWhite">Yatharth Jain</h1>
@@ -435,6 +430,19 @@ export default function Homepage() {
             <div className="teamSocialContainer">
             <a target="_blank" href="https://www.linkedin.com/in/depindaddy/" ><LazyLoadImage src="assets/linkedin.svg" style={{ width: '2rem' }} alt="LinkedIn"></LazyLoadImage></a>
             <a target="_blank" href="https://twitter.com/depindaddy/" ><LazyLoadImage src="assets/twitter.svg" style={{ width: '1.8rem', opacity: 0.5 }} alt="Twitter"></LazyLoadImage></a>
+            </div>
+          </div>
+        </div>
+        {/* Team Member Card 2 */}
+        <div className="teamMainCard" style={{ transform: 'rotate(-2deg) translate(0rem, 2rem)', zIndex: 1 }}>
+          <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/nelson.jpg" alt="Yatharth Jain"></LazyLoadImage>
+          <div className="teamInfoCard">
+            <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
+            <h1 className="gWhite">Nelson Paul</h1>
+            <h2 className="gGrey">CMO</h2>
+            <div className="teamSocialContainer">
+            <a target="_blank" href="https://www.linkedin.com/in/nelsonpaul005/" ><LazyLoadImage src="assets/linkedin.svg" style={{ width: '2rem' }} alt="LinkedIn"></LazyLoadImage></a>
+            <a target="_blank" href="https://x.com/nelsonpaul_tez" ><LazyLoadImage src="assets/twitter.svg" style={{ width: '1.8rem', opacity: 0.5 }} alt="Twitter"></LazyLoadImage></a>
             </div>
           </div>
         </div>
@@ -470,12 +478,7 @@ export default function Homepage() {
         imageSrc="./clusterasset/people/tomer.jpg"
         linkedinProfile="https://www.linkedin.com/in/tomernuni/"
       />
-      <TeamCard
-        name="Nelson Paul"
-        role="Pivot Ventures, Advisor-Tezos"
-        imageSrc="./clusterasset/people/nelson.jpg"
-        linkedinProfile="https://www.linkedin.com/in/nelsonpaul005/"
-      />
+
       <TeamCard
         name="Anshul Dhir"
         role="Ex-EasyFi, Founder @Pivot"
