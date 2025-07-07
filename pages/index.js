@@ -423,6 +423,8 @@ export default function Homepage() {
         {/* Team Member Card 1 */}
         <div className="teamMainCard" style={{ zIndex: 2 }}>
         <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
+        <div className="teamMainCard" style={{ zIndex: 2 }}>
+        <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
           <div className="teamInfoCard">
             <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
             <h1 className="gWhite">Yatharth Jain</h1>
@@ -522,6 +524,7 @@ export default function Homepage() {
         imageSrc="./clusterasset/people/tomer.jpg"
         linkedinProfile="https://www.linkedin.com/in/tomernuni/"
       />
+
 
       <TeamCard
         name="Anshul Dhir"
