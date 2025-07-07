@@ -417,17 +417,12 @@ export default function Homepage() {
       
       {/* MEET OUR TEAM */}
       <div className="headerTitleContainer" id='team'>
-        <h1 className="gWhite" >CORE TEAM AND BACKERS</h1>
+        <h1 className="gWhite" >CORE TEAM</h1>
       </div>
-      <div id='CONteam' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem 1rem', width: '95%', margin: '2rem auto', marginBottom:'10rem' }}>
+      <div id='CONteam' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem 1rem', width: '95%', margin: '2rem auto', marginBottom:'1rem' }}>
         {/* Team Member Card 1 */}
-        
-
-        
-      
-        {/* Team Member Card 2 */}
-        <div className="teamMainCard" style={{ transform: 'rotate(-2deg) translate(0rem, 2rem)', zIndex: 1 }}>
-          <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
+        <div className="teamMainCard" style={{ zIndex: 2 }}>
+        <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
           <div className="teamInfoCard">
             <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
             <h1 className="gWhite">Yatharth Jain</h1>
@@ -438,8 +433,65 @@ export default function Homepage() {
             </div>
           </div>
         </div>
+        {/* Team Members - Grid Layout with Original Cards */}
+             <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', width: '95%', margin: '2rem auto' }}>
+        <div className="teamMainCard" style={{ transform: 'scale(0.7)', zIndex: 1 }}>
+          <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/nar.png" alt="Narayan Singh"></LazyLoadImage>
+          <div className="teamInfoCard">
+            <span style={{ color: '#9773d2', fontSize: '1.9rem' }}>◣</span>
+            <h1 className="gWhite">Narayan Singh</h1>
+            <h2 className="gGrey">Senior Full Stack Developer</h2>
+            <div className="teamSocialContainer">
+
+            </div>
+          </div>
+        </div>
+        
+        <div className="teamMainCard" style={{ transform: 'scale(0.7)', zIndex: 1 }}>
+          <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/har.jpg" alt="Hardik Kwatra"></LazyLoadImage>
+          <div className="teamInfoCard">
+            <span style={{ color: '#9773d2', fontSize: '1.9rem' }}>◣</span>
+            <h1 className="gWhite">Hardik Kwatra</h1>
+            <h2 className="gGrey">AI Infrastructure Engineer</h2>
+            <div className="teamSocialContainer">
+
+            </div>
+          </div>
+        </div>
+        
+        <div className="teamMainCard" style={{ transform: 'scale(0.7)', zIndex: 1 }}>
+          <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/sri.jpg" alt="Srinivas Vangipuram"></LazyLoadImage>
+          <div className="teamInfoCard">
+            <span style={{ color: '#9773d2', fontSize: '1.9rem' }}>◣</span>
+            <h1 className="gWhite">Srinivas Vangipuram</h1>
+            <h2 className="gGrey">DevOps Engineer</h2>
+            <div className="teamSocialContainer">
+      
+            </div>
+          </div>
+        </div>
+        
+        <div className="teamMainCard" style={{ transform: 'scale(0.7)', zIndex: 1 }}>
+          <LazyLoadImage className="teamImage" style={{borderRadius:'rem'}} src="./clusterasset/people/ris.jpg" alt="Rishi Rawat"></LazyLoadImage>
+          <div className="teamInfoCard">
+            <span style={{ color: '#9773d2', fontSize: '1.9rem' }}>◣</span>
+            <h1 className="gWhite">Rishi Rawat</h1>
+            <h2 className="gGrey">Full Stack Developer</h2>
+            <div className="teamSocialContainer">
+
+            </div>
+          </div>
+        </div>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '1rem', width: '90%', margin: '5rem auto 1rem' }}>
+
+      <h1 className="gWhite" style={{textAlign:"center",marginLeft:"auto",marginRight:"auto",marginBottom:"-10rem",fontSize:"1rem"}}>AND MANY MORE</h1>   
+    
+      <div className="headerTitleContainer" id='team'>
+        <h1 className="gWhite" >OUR BACKERS</h1>
+      </div>
+      <div id='CONteam' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '1rem 1rem', width: '95%', margin: '-8rem ' }}>
+        </div>
+      
       <TeamCard
         name="Marcello Mari"
         role="Founder & CEO   @SingularityDAO "
@@ -470,12 +522,7 @@ export default function Homepage() {
         imageSrc="./clusterasset/people/tomer.jpg"
         linkedinProfile="https://www.linkedin.com/in/tomernuni/"
       />
-      <TeamCard
-        name="Nelson Paul"
-        role="Pivot Ventures, Advisor-Tezos"
-        imageSrc="./clusterasset/people/nelson.jpg"
-        linkedinProfile="https://www.linkedin.com/in/nelsonpaul005/"
-      />
+
       <TeamCard
         name="Anshul Dhir"
         role="Ex-EasyFi, Founder @Pivot"
