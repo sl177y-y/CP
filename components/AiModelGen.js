@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { LuComputer, LuImage, LuLoader, LuPlay, LuShare, LuSparkles, LuTextCursorInput, LuGlobe, LuCpu, LuActivity, LuHouse, LuHash, LuListOrdered } from "react-icons/lu";
+import { LuComputer, LuImage, LuLoader2, LuPlay, LuShare, LuSparkles, LuTextCursorInput, LuGlobe2, LuCpu, LuActivity, LuHome, LuHash, LuListOrdered } from "react-icons/lu";
 
 const AiModelGen = ({ botData }) => {
   const [prompt, setPrompt] = useState({});
@@ -99,7 +99,7 @@ const AiModelGen = ({ botData }) => {
       <div style={{ margin: "0 auto", marginTop: '25vh', width: '80%' }}>
         <Link href="/ai">
           <div style={{ background: '#101010e0', display: 'flex', border: '1px solid #4b4b4b', color: '#4b4b4b', width: 'fit-content', alignItems: 'center', padding: '0.2rem 0.5rem', borderRadius: '1.7rem', marginBottom: '3rem' }}>
-            <LuHouse size={20}></LuHouse>
+            <LuHome size={20}></LuHome>
             <h1 style={{ fontSize: 20, fontWeight: 500, marginLeft: '0.5rem' }}>Back to All Models</h1>
           </div>
         </Link>
@@ -207,7 +207,7 @@ const AiModelGen = ({ botData }) => {
               {errorOccured && <h1 style={{ color: '#ca6a6a', lineHeight: '1.24', fontSize: '1rem', fontWeight: '430', border: '1px solid #ff5f5f', width: 'fit-content', padding: '0 0.4rem', borderRadius: '1rem', margin: '2vh 0', background: '#ef000026' }}>AI Model Couldn't process your Request!</h1>}
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem 2rem' }}>
                 {isLoading && <div style={{ animation: 'spincircle 0.6s infinite linear', display: 'flex' }}>
-                  <LuLoader color="white" size={20}></LuLoader>
+                  <LuLoader2 color="white" size={20}></LuLoader2>
                 </div>}
               </div>
               {!output && !textOutput &&

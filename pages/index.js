@@ -243,23 +243,6 @@ export default function Homepage() {
   
   return (
     <>
-    <style jsx>{`
-      @media (max-width: 768px) {
-        .teamGridContainer {
-          flex-direction: column !important;
-          align-items: center !important;
-          gap: 3rem !important;
-        }
-        .teamGridContainer .teamMainCard {
-          transition: none !important;
-          transform: scale(0.7) !important;
-        }
-        .teamGridContainer .teamMainCard:hover {
-          transform: scale(0.7) !important;
-          box-shadow: inherit !important;
-        }
-      }
-    `}</style>
     <Head>
       <title>Cluster Protocol </title>
       {/* <meta name="google-site-verification" content="JJGvDA-BM8tLfcKzOkRdenbMYi956rPw8WHFVMZhueE"></meta> */}
@@ -436,11 +419,11 @@ export default function Homepage() {
       <div className="headerTitleContainer" id='team'>
         <h1 className="gWhite" >CORE TEAM</h1>
       </div>
-      <div id='CONteam' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem 1rem', width: '95%', margin: '2rem auto', marginBottom:'1rem' }}>
+      <div id='CONteam' className="team-container" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '-5rem 1rem', width: '95%', margin: '2rem auto', marginBottom:'1rem' }}>
         {/* Team Member Card 1 */}
-        <div className="teamMainCard" style={{ zIndex: 2 }}>
-        <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
-          <div className="teamInfoCard">
+        <div className="teamMainCard" style={{ zIndex: 2, transform: 'scale(1.1)', position: 'relative', overflow: 'hidden' }}>
+        <LazyLoadImage className="teamImage" style={{borderRadius:'0', position: 'absolute', top: '0', left: '0', width: '40%', height: '100%', objectFit: 'cover'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
+          <div className="teamInfoCard" style={{ marginLeft: '45%', width: '55%', height: '100%' }}>
             <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
             <h1 className="gWhite">Yatharth Jain</h1>
             <h2 className="gGrey">CEO & Founder</h2>
@@ -450,32 +433,27 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        {/* Team Members - Grid Layout with Original Cards */}
-                           <div style={{ 
-                display: 'flex', 
-                justifyContent: 'center', 
-                gap: '1.5rem', 
-                width: '95%', 
-                margin: '2rem auto',
-                flexDirection: 'row'
-              }} 
-              className="teamGridContainer">
-        <div className="teamMainCard" style={{ transform: 'scale(0.7)', zIndex: 1 }}>
-          <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/nar.png" alt="Narayan Singh"></LazyLoadImage>
-          <div className="teamInfoCard">
-            <span style={{ color: '#9773d2', fontSize: '1.9rem' }}>◣</span>
+        {/* Team Member Card 2 */}
+        <div className="teamMainCard" style={{ transform: 'rotate(-2deg) translate(2rem, 1rem) scale(1.1)', zIndex: 1, position: 'relative', overflow: 'hidden' }}>
+          <LazyLoadImage className="teamImage" style={{borderRadius:'0', position: 'absolute', top: '0', left: '0', width: '40%', height: '100%', objectFit: 'cover'}} src="./clusterasset/people/nar.png" alt="Narayan Singh"></LazyLoadImage>
+          <div className="teamInfoCard" style={{ marginLeft: '45%', width: '55%', height: '100%' }}>
+            <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
             <h1 className="gWhite">Narayan Singh</h1>
             <h2 className="gGrey">Senior Full Stack Developer</h2>
             <div className="teamSocialContainer">
-
+      
             </div>
           </div>
         </div>
-        
-        <div className="teamMainCard" style={{ transform: 'scale(0.7)', zIndex: 1 }}>
-          <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/har.jpg" alt="Hardik Kwatra"></LazyLoadImage>
-          <div className="teamInfoCard">
-            <span style={{ color: '#9773d2', fontSize: '1.9rem' }}>◣</span>
+      </div>
+      
+      {/* Additional Team Cards Row */}
+      <div className="team-container" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '-5rem 1rem', width: '95%', margin: '10rem auto', marginBottom:'5rem' }}>
+        {/* Team Member Card 3 */}
+        <div className="teamMainCard" style={{ transform: 'rotate(2deg) translate(-3rem, -0rem) scale(1.1)', zIndex: 3, position: 'relative', overflow: 'hidden' }}>
+          <LazyLoadImage className="teamImage" style={{borderRadius:'0', position: 'absolute', top: '0', left: '0', width: '40%', height: '100%', objectFit: 'cover'}} src="./clusterasset/people/har.jpg" alt="Team Member 3"></LazyLoadImage>
+          <div className="teamInfoCard" style={{ marginLeft: '42%', width: '55%', height: '100%' }}>
+            <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
             <h1 className="gWhite">Hardik Kwatra</h1>
             <h2 className="gGrey">AI Infrastructure Engineer</h2>
             <div className="teamSocialContainer">
@@ -483,22 +461,22 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        
-        <div className="teamMainCard" style={{ transform: 'scale(0.7)', zIndex: 1 }}>
-          <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/sri.jpg" alt="Srinivas Vangipuram"></LazyLoadImage>
-          <div className="teamInfoCard">
-            <span style={{ color: '#9773d2', fontSize: '1.9rem' }}>◣</span>
+        {/* Team Member Card 4 */}
+        <div className="teamMainCard" style={{ transform: 'rotate(-2deg) translate(-2rem, 1rem) scale(1.1)', zIndex: 2, position: 'relative', overflow: 'hidden' }}>
+          <LazyLoadImage className="teamImage" style={{borderRadius:'0', position: 'absolute', top: '0', left: '0', width: '40%', height: '100%', objectFit: 'cover'}} src="./clusterasset/people/sri.jpg" alt="Team Member 4"></LazyLoadImage>
+          <div className="teamInfoCard" style={{ marginLeft: '42%', width: '55%', height: '100%' }}>
+            <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
             <h1 className="gWhite">Srinivas Vangipuram</h1>
             <h2 className="gGrey">DevOps Engineer</h2>
             <div className="teamSocialContainer">
-      
+
             </div>
           </div>
         </div>
-        
-        <div className="teamMainCard" style={{ transform: 'scale(0.7)', zIndex: 1 }}>
-          <LazyLoadImage className="teamImage" style={{borderRadius:'rem'}} src="./clusterasset/people/ris.jpg" alt="Rishi Rawat"></LazyLoadImage>
-          <div className="teamInfoCard">
+        {/* Team Member Card 5 */}
+        <div className="teamMainCard" style={{ transform: 'rotate(2deg) translate(1rem, -0.5rem) scale(1.1)', zIndex: 1, position: 'relative', overflow: 'hidden' }}>
+          <LazyLoadImage className="teamImage" style={{borderRadius:'0', position: 'absolute', top: '0', left: '0', width: '40%', height: '100%', objectFit: 'cover'}} src="./clusterasset/people/ris.jpg" alt="Team Member 5"></LazyLoadImage>
+          <div className="teamInfoCard" style={{ marginLeft: '42%', width: '55%', height: '100%' }}>
             <span style={{ color: '#9773d2', fontSize: '1.9rem' }}>◣</span>
             <h1 className="gWhite">Rishi Rawat</h1>
             <h2 className="gGrey">Full Stack Developer</h2>
@@ -508,15 +486,11 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-
-      <h1 className="gWhite" style={{textAlign:"center",marginLeft:"auto",marginRight:"auto",marginBottom:"-10rem",fontSize:"1rem"}}>AND MANY MORE</h1>   
-    
+      <h1 className="gWhite" style={{textAlign:"center",marginLeft:"auto",marginRight:"auto",marginBottom:"5rem",fontSize:"1rem"}}>AND MANY MORE</h1> 
       <div className="headerTitleContainer" id='team'>
         <h1 className="gWhite" >OUR BACKERS</h1>
       </div>
-      <div id='CONteam' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '1rem 1rem', width: '95%', margin: '-8rem ' }}>
-        </div>
-      
+      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '1rem', width: '90%', margin: '5rem auto 1rem' }}>
       <TeamCard
         name="Marcello Mari"
         role="Founder & CEO   @SingularityDAO "
@@ -713,4 +687,3 @@ export default function Homepage() {
   </>
   );
 }
-

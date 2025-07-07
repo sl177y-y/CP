@@ -1,6 +1,6 @@
 import React from "react";
 import AiModelGen from "@/components/AiModelGen";
-import { LuComputer, LuImage, LuLoader, LuPlay, LuShare, LuSparkles, LuTextCursorInput, LuGlobe, LuCpu, LuActivity, LuHouse, LuHash, LuListOrdered } from "react-icons/lu";
+import { LuComputer, LuImage, LuLoader2, LuPlay, LuShare, LuSparkles, LuTextCursorInput, LuGlobe2, LuCpu, LuActivity, LuHome, LuHash, LuListOrdered } from "react-icons/lu";
 
 const AiArena = () => {
   const botData = {
@@ -8,7 +8,7 @@ const AiArena = () => {
     description: "An AI Model that allows you to ask questions from the given image.",
     avatar:"max.png",
     stats: [
-      { label: "Public", icon: LuGlobe, color: "#81bf81" },
+      { label: "Public", icon: LuGlobe2, color: "#81bf81" },
       { label: "1k+ Runs", icon: LuActivity, color: "#ffa59e" },
       { label: "Nvidia™ A40 (Large)", icon: LuCpu, color: "white" }
     ],
