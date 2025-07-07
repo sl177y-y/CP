@@ -448,7 +448,7 @@ export default function Homepage() {
       </div>
       
       {/* Additional Team Cards Row */}
-      <div className="team-container" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '-5rem 1rem', width: '95%', margin: '10rem auto', marginBottom:'5rem' }}>
+      <div className="team-container" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '5rem 1rem', width: '95%', margin: '10rem auto', marginBottom:'5rem' }}>
         {/* Team Member Card 3 */}
         <div className="teamMainCard" style={{ transform: 'rotate(2deg) translate(-3rem, -0rem) scale(1.1)', zIndex: 3, position: 'relative', overflow: 'hidden' }}>
           <LazyLoadImage className="teamImage" style={{borderRadius:'0', position: 'absolute', top: '0', left: '0', width: '40%', height: '100%', objectFit: 'cover'}} src="./clusterasset/people/har.jpg" alt="Team Member 3"></LazyLoadImage>

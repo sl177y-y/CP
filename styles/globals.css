@@ -1766,5 +1766,6 @@ footer {
     }
     .team-container {
         margin: 2rem auto !important;
+        gap: 1.5rem 1rem !important; /* Decreased gap between cards on mobile */
     }
 }
