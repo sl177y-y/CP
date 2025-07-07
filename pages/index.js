@@ -419,10 +419,10 @@ export default function Homepage() {
       <div className="headerTitleContainer" id='team'>
         <h1 className="gWhite" >CORE TEAM</h1>
       </div>
-      <div id='CONteam' className="team-container" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '-5rem 1rem', width: '95%', margin: '2rem auto', marginBottom:'1rem' }}>
-        {/* Team Member Card 1 */}
-        <div className="teamMainCard" style={{ zIndex: 2, transform: 'scale(1.1)', position: 'relative', overflow: 'hidden' }}>
-        <LazyLoadImage className="teamImage" style={{borderRadius:'0', position: 'absolute', top: '0', left: '0', width: '40%', height: '100%', objectFit: 'cover'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
+      <div id='CONteam' className="team-container" style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '5rem 2rem', width: '95%', margin: '2rem auto', marginBottom:'1rem' }}>
+         {/* Team Member Card 1 */}
+         <div className="teamMainCard" style={{ zIndex: 2, transform: 'scale(1.09)', position: 'relative', overflow: 'hidden' }}>
+        <LazyLoadImage className="teamImage" style={{borderRadius:'0', position: 'absolute', top: '0', left: '0', width: '42%', height: '100%', objectFit: 'cover'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
           <div className="teamInfoCard" style={{ marginLeft: '45%', width: '55%', height: '100%' }}>
             <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
             <h1 className="gWhite">Yatharth Jain</h1>
@@ -434,14 +434,14 @@ export default function Homepage() {
           </div>
         </div>
         {/* Team Member Card 2 */}
-        <div className="teamMainCard" style={{ transform: 'rotate(-2deg) translate(2rem, 1rem) scale(1.1)', zIndex: 1, position: 'relative', overflow: 'hidden' }}>
-          <LazyLoadImage className="teamImage" style={{borderRadius:'0', position: 'absolute', top: '0', left: '0', width: '40%', height: '100%', objectFit: 'cover'}} src="./clusterasset/people/nar.png" alt="Narayan Singh"></LazyLoadImage>
+        <div className="teamMainCard" style={{ transform: 'rotate(1deg) translate(-1rem, 1rem) scale(1.08)', zIndex: 1, position: 'relative', overflow: 'hidden' }}>
+          <LazyLoadImage className="teamImage" style={{borderRadius:'0', position: 'absolute', top: '0', left: '0', width: '42%', height: '100%', objectFit: 'cover'}} src="./clusterasset/people/NAR.jpg" alt="Narayan Singh"></LazyLoadImage>
           <div className="teamInfoCard" style={{ marginLeft: '45%', width: '55%', height: '100%' }}>
             <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
             <h1 className="gWhite">Narayan Singh</h1>
             <h2 className="gGrey">Senior Full Stack Developer</h2>
             <div className="teamSocialContainer">
-      
+
             </div>
           </div>
         </div>
