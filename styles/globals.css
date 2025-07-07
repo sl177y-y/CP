@@ -461,7 +461,7 @@ body {
 .psCardTextInfo {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     width: 80%;
     padding-top: 1.5rem;
     margin: 0 auto;
