@@ -243,6 +243,23 @@ export default function Homepage() {
   
   return (
     <>
+    <style jsx>{`
+      @media (max-width: 768px) {
+        .teamGridContainer {
+          flex-direction: column !important;
+          align-items: center !important;
+          gap: 3rem !important;
+        }
+        .teamGridContainer .teamMainCard {
+          transition: none !important;
+          transform: scale(0.7) !important;
+        }
+        .teamGridContainer .teamMainCard:hover {
+          transform: scale(0.7) !important;
+          box-shadow: inherit !important;
+        }
+      }
+    `}</style>
     <Head>
       <title>Cluster Protocol </title>
       {/* <meta name="google-site-verification" content="JJGvDA-BM8tLfcKzOkRdenbMYi956rPw8WHFVMZhueE"></meta> */}
@@ -423,8 +440,6 @@ export default function Homepage() {
         {/* Team Member Card 1 */}
         <div className="teamMainCard" style={{ zIndex: 2 }}>
         <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
-        <div className="teamMainCard" style={{ zIndex: 2 }}>
-        <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/yatharth.jpg" alt="Yatharth Jain"></LazyLoadImage>
           <div className="teamInfoCard">
             <span style={{ color: '#9773d2', fontSize: '1.5rem' }}>◣</span>
             <h1 className="gWhite">Yatharth Jain</h1>
@@ -436,7 +451,15 @@ export default function Homepage() {
           </div>
         </div>
         {/* Team Members - Grid Layout with Original Cards */}
-             <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', width: '95%', margin: '2rem auto' }}>
+                           <div style={{ 
+                display: 'flex', 
+                justifyContent: 'center', 
+                gap: '1.5rem', 
+                width: '95%', 
+                margin: '2rem auto',
+                flexDirection: 'row'
+              }} 
+              className="teamGridContainer">
         <div className="teamMainCard" style={{ transform: 'scale(0.7)', zIndex: 1 }}>
           <LazyLoadImage className="teamImage" style={{borderRadius:'1rem'}} src="./clusterasset/people/nar.png" alt="Narayan Singh"></LazyLoadImage>
           <div className="teamInfoCard">
@@ -524,7 +547,6 @@ export default function Homepage() {
         imageSrc="./clusterasset/people/tomer.jpg"
         linkedinProfile="https://www.linkedin.com/in/tomernuni/"
       />
-
 
       <TeamCard
         name="Anshul Dhir"

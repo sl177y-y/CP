@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
       <div style={{ margin: '2vh 0', display: 'flex', justifyContent: 'space-between', width: '100vw', flexWrap: 'wrap' }}>
         <h4 style={{ fontWeight: '200' }}><strong>Email: </strong>support@Clusterprotocol.ai</h4>
-        <h4 style={{ fontWeight: '200' }}>© Copyright Cluster Protocol 2024</h4>
+        <h4 style={{ fontWeight: '200' }}>© Copyright Cluster Protocol 2025</h4>
       </div>
     </footer>
   );
